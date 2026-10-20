@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Beyond Firewalls: The Age of Autonomous Defense</title>
+  <meta name="description" content="When machines learn to attack and defend, who wins the cybersecurity arms race? An essay exploring autonomous defense, machine-speed adversarial AI, and security boundaries.">
+  <meta name="author" content="Five Computer Engineering Students">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Beyond Firewalls: The Age of Autonomous Defense">
+  <meta property="og:description" content="When machines learn to attack and defend, who wins the cybersecurity arms race?">
+
+  <!-- Typography: Newsreader (Editorial Serif) & Inter (Clean Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Subtle Reading Progress Bar -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- Full-Width Minimal Site Header -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="#" class="site-title">
+        <span>Beyond Firewalls: The Age of Autonomous Defense</span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="#references" class="nav-link">References</a>
+        <button class="theme-toggle-btn" id="themeBtn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fa-regular fa-moon" id="themeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container: 2-Column Wide Layout -->
+  <div class="page-container">
+    <div class="article-layout">
+
+      <!-- Sticky Left Sidebar (Table of Contents & Meta) -->
+      <aside class="article-sidebar" aria-label="Article navigation and metadata">
+        
+        <!-- Table of Contents Panel -->
+        <div class="sidebar-panel">
+          <div class="sidebar-panel-title">
+            <i class="fa-solid fa-bars-staggered"></i> On This Page
+          </div>
+          <nav class="toc-nav" id="tocNav">
+            <a href="#college-canteen">It started in a college canteen</a>
+            <a href="#cyber-battlefield">When AI enters the battlefield</a>
+            <a href="#ai-fights-ai">When AI Fights AI</a>
+            <a href="#who-protects-ai">Who Protects the AI?</a>
+            <a href="#boundaries">Intelligence Needs Boundaries</a>
+            <a href="#beyond-firewalls">Beyond Firewalls</a>
+            <a href="#references">References</a>
+          </nav>
+        </div>
+
+        <!-- Article Information Panel -->
+        <div class="sidebar-panel">
+          <div class="sidebar-panel-title">
+            <i class="fa-regular fa-file-lines"></i> Article Info
+          </div>
+          <div class="sidebar-meta-list">
+            <div class="sidebar-meta-item">
+              <strong>Authors</strong>
+              <ul class="author-name-list">
+                <li>Huzan Shroff</li>
+                <li>Kartikey Patil</li>
+                <li>Ishak Ansari</li>
+                <li>Vaibhav Parate</li>
+                <li>Krishna Singh</li>
+              </ul>
+            </div>
+            <div class="sidebar-meta-item">
+              <strong>Published</strong>
+              <span>October 2026</span>
+            </div>
+            <div class="sidebar-meta-item">
+              <strong>Reading Time</strong>
+              <span id="sidebarReadTime">5 min read</span>
+            </div>
+            <div class="sidebar-meta-item">
+              <strong>Topic</strong>
+              <span>Autonomous Cybersecurity &amp; AI</span>
+            </div>
+          </div>
+          <button class="sidebar-share-btn" id="sidebarShareBtn">
+            <i class="fa-regular fa-copy"></i> Copy Article Link
+          </button>
+        </div>
+
+      </aside>
+
+      <!-- Main Article Column -->
+      <main class="article-main">
+        <article>
+          
+          <!-- Post Header -->
+          <header class="post-header">
+            <span class="post-category">Cybersecurity &amp; Artificial Intelligence</span>
+            <h1 class="post-title">Beyond Firewalls: The Age of Autonomous Defense</h1>
+            <p class="post-subtitle">When machines learn to attack and defend, who wins the cybersecurity arms race?</p>
+
+            <div class="post-byline">
+              <div class="author-avatar"><i class="fa-solid fa-users"></i></div>
+              <div class="byline-details">
+                <div class="author-name">Huzan Shroff · Kartikey Patil · Ishak Ansari · Vaibhav Parate · Krishna Singh</div>
+                <div class="post-meta">
+                  <span>October 2026</span> · <span id="readTime">5 min read</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- Article Content -->
+          <div class="post-body">
+
+            <!-- Section 1 -->
+            <section id="college-canteen">
+              <h2>It started in a college canteen</h2>
+
+              <p class="lead-p">
+                There were five of us in the college canteen. Just a regular lunch break and free-flowing conversation. And in all that chatter, the conversation shifted to cybersecurity and AI, as it often does when you are a computer engineering student, such lunchtime conversations are commonplace.
+              </p>
+
+              <p>
+                We had learned about firewalls, encryption, intrusion detection, and the layers protecting our digital world only the previous day. But as we discussed the rapid evolution of artificial intelligence, one question caught our attention:
+              </p>
+
+              <blockquote>
+                <p>“What if we enter a world where AI attacks and AI defends?”</p>
+                <div class="quote-source">— Lunchtime canteen conversation</div>
+              </blockquote>
+
+              <p>
+                Now, consider an AI-powered attacker searching for vulnerabilities, adapting its techniques, and exploiting weaknesses at machine speed. Meanwhile, an AI-powered defender monitors the same environment, identifies suspicious behavior, and blocks threats before they cause damage.
+              </p>
+
+              <p>
+                Yes, it totally sounds like science fiction!! And yet important pieces of this future are already emerging.
+              </p>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="cyber-battlefield">
+              <h2>When AI enters the cyber battlefield</h2>
+
+              <p>
+                It is no secret that AI is constantly changing the technological landscape. It is also changing how cyberattacks are conducted. It can help attackers automate reconnaissance, generate convincing phishing messages, analyze vulnerabilities, and accelerate parts of an attack.
+              </p>
+
+              <p>
+                But the same capabilities can also strengthen a defense.
+              </p>
+
+              <p>
+                Consider vulnerability discovery. An AI system might examine the source code, identify a weakness, and explain how it could be exploited. That discovery creates two possible paths: an attacker could develop an exploit, or a defender could patch the vulnerability before it is abused!
+              </p>
+
+              <div class="highlight-box">
+                <div class="highlight-title">Find. Understand. Exploit……or patch!</div>
+                <p>This is the emerging cybersecurity arms race. Both sides can use similar capabilities, but their objectives differ.</p>
+              </div>
+
+              <p>
+                AI-assisted attacks are already documented, and security researchers are exploring AI-driven vulnerability discovery and automated defenses. However, fully autonomous attackers and defenders operating independently at every stage remain a more ambitious possibility rather than a universal reality. <a href="#ref-1" class="citation">[1]</a>
+              </p>
+
+              <p>
+                The defensive opportunity is significant, as AI can help detect unusual activity, prioritize alerts, identify weaknesses through authorized penetration testing, and coordinate incident response.
+              </p>
+
+              <p>
+                It is important to remember that traditional security tools still matter. Firewalls enforce network policies, while security monitoring platforms collect and correlate events. AI adds another layer: the ability to help interpret patterns, investigate evidence, and accelerate decisions.
+              </p>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="ai-fights-ai">
+              <h2>When AI Fights AI</h2>
+
+              <p>
+                Picture a scenario of where an attacker gains access to a company's network using stolen credentials.
+              </p>
+
+              <p>
+                The attacker begins accessing sensitive files and attempting to move across systems. Now, a conventional security tool may flag individual events, but an AI-assisted defense system can correlate authentication logs, endpoint activity, and network traffic to identify a broader pattern. A response workflow could revoke the suspicious session, restrict access, and alert a human analyst.
+              </p>
+
+              <!-- Incident Walkthrough Card -->
+              <div class="scenario-card">
+                <div class="scenario-header">
+                  <span>Incident Walkthrough: AI-Assisted Defense</span>
+                  <span>Autonomous Response Lifecycle</span>
+                </div>
+                <div class="scenario-body">
+                  <div class="scenario-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                      <strong>Compromised Credentials &amp; Lateral Probing</strong>
+                      <p>The adversary leverages stolen credentials. While individual requests match legitimate syntax, anomalies appear across temporal distribution and geographic origins.</p>
+                    </div>
+                  </div>
+                  <div class="scenario-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                      <strong>Correlating Disparate Signals</strong>
+                      <p>Where conventional security alerts treat events in silos, an AI defense layer correlates authentication logs, endpoint changes, and packet anomalies into a unified behavioral pattern.</p>
+                    </div>
+                  </div>
+                  <div class="scenario-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                      <strong>Automated Containment &amp; Escalation</strong>
+                      <p>The defense workflow autonomously terminates active tokens, isolates targeted containers, and delivers prioritized forensics to human responders.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Now if the attacker is adapting to evade detection while the defender adjusts its response to the changing evidence, then this is the possibility of AI versus AI: a continuous cycle of discovery, attack, detection, and adaptation.
+              </p>
+
+              <p>
+                However, speed alone does not guarantee victory. A defender with poor visibility or incorrect detection rules can still miss an attack, and an attacker can also exploit a vulnerability before it is patched. The advantage will increasingly depend on who can identify weaknesses, validate evidence, and act effectively first.
+              </p>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="who-protects-ai">
+              <h2>The Other Side: Who Protects the AI?</h2>
+
+              <p>
+                Our canteen conversation led us to a second question… If AI becomes part of our security infrastructure, what happens when the AI itself becomes the target?
+              </p>
+
+              <p>
+                An AI application introduces components beyond those of a conventional application: models, prompts, connected tools, external data sources, and sometimes agents with permission to perform actions.
+              </p>
+
+              <p>
+                Each connection creates potential security risks, but these three deserve particular attention:
+              </p>
+
+              <!-- Threat Cards -->
+              <div class="threat-list">
+                <div class="threat-item">
+                  <div class="threat-title">
+                    <span>Prompt Injection</span>
+                    <span class="threat-label">Input Manipulation</span>
+                  </div>
+                  <p>
+                    An attacker hides malicious instructions in a document or webpage that an AI system processes. The system may interpret those instructions as commands rather than untrusted content.
+                  </p>
+                  <div class="threat-example">
+                    <strong>Example:</strong> A résumé could contain invisible text intended to manipulate an AI recruitment assistant into recommending a particular candidate.
+                  </div>
+                </div>
+
+                <div class="threat-item">
+                  <div class="threat-title">
+                    <span>Data Poisoning</span>
+                    <span class="threat-label">Integrity &amp; Training Flaws</span>
+                  </div>
+                  <p>
+                    An attacker manipulates training data or other data sources so that a model learns misleading patterns or produces unreliable outputs.
+                  </p>
+                  <div class="threat-example">
+                    <strong>Case Study:</strong> Microsoft's Tay chatbot incident in 2016 demonstrated how malicious user interactions could rapidly turn an inadequately protected conversational system into a source of offensive content. Although this was not a conventional training-dataset poisoning attack, it illustrates the dangers of allowing untrusted interactions to shape system behavior.
+                  </div>
+                </div>
+
+                <div class="threat-item">
+                  <div class="threat-title">
+                    <span>Excessive Permissions</span>
+                    <span class="threat-label">Agency Overreach</span>
+                  </div>
+                  <p>
+                    An AI agent may have access to databases, files, or production systems that it does not need. A mistaken decision or malicious instruction can then have consequences beyond generating an incorrect answer.
+                  </p>
+                  <div class="threat-example">
+                    <strong>Security Impact:</strong> Granting autonomous agents direct write or drop permissions across production datastores turns prompt-injection vulnerabilities into catastrophic infrastructure failures.
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                These are not merely theoretical concerns. They demonstrate why securing AI requires more than securing the network around it. <a href="#ref-2" class="citation">[2]</a><a href="#ref-3" class="citation">[3]</a>
+              </p>
+            </section>
+
+            <!-- Section 5 -->
+            <section id="boundaries">
+              <h2>Intelligence Needs Boundaries</h2>
+
+              <p>
+                How do we defend against these risks without abandoning autonomous systems?
+              </p>
+
+              <p>
+                The answer begins with a simple principle: <strong>an AI system should never have more power than it needs.</strong>
+              </p>
+
+              <p>
+                Security teams can enforce least-privilege access, isolate development environments from production systems, validate untrusted inputs, and require approval for high-impact actions.
+              </p>
+
+              <!-- Intent vs Policy Comparison -->
+              <div class="comparison-grid">
+                <div class="comp-panel">
+                  <span class="comp-badge badge-weak">Prompt Instruction (Intent Only)</span>
+                  <h4>Fragile Boundary</h4>
+                  <div class="code-box">
+                    // Prompt instruction:<br>
+                    "Do not alter production tables."
+                  </div>
+                  <p>
+                    Telling an AI coding agent not to modify a production database is only an expression of intent; malicious prompts or hallucinations can bypass it.
+                  </p>
+                </div>
+
+                <div class="comp-panel">
+                  <span class="comp-badge badge-strong">Access-Control Policy (Enforced)</span>
+                  <h4>Hard Boundary</h4>
+                  <div class="code-box">
+                    // IAM permission policy:<br>
+                    REVOKE WRITE ON db_production;
+                  </div>
+                  <p>
+                    Removing write permissions enforces the boundary directly at the system level, irrespective of what the model generates.
+                  </p>
+                </div>
+              </div>
+
+              <p>
+                Similarly, prompt injection cannot be solved reliably by asking a model to ignore every malicious instruction. Applications must treat external content as untrusted, limit tool access, validate actions, and test the complete workflow.
+              </p>
+
+              <p>
+                AI-generated security decisions also need audit trails, measurable performance, and human oversight where the consequences of error are serious. Autonomy without safeguards creates another attack surface. Carefully bounded autonomy can instead become a defensive advantage.
+              </p>
+            </section>
+
+            <!-- Section 6 -->
+            <section id="beyond-firewalls">
+              <h2>Beyond Firewalls</h2>
+
+              <p>
+                We began with five students in a college canteen and a question about the future, and we ended up with two interconnected challenges.
+              </p>
+
+              <p>
+                First, AI will continue to influence how systems are attacked and defended. Second, as organizations rely more heavily on AI, those systems must themselves become part of the security perimeter.
+              </p>
+
+              <p>
+                These two directions—<strong>AI for cybersecurity</strong> and <strong>cybersecurity for AI</strong>—cannot be treated separately.
+              </p>
+
+              <p>
+                The future may involve AI systems discovering vulnerabilities while other systems patch them, agents investigating incidents while adversarial agents attempt to evade detection, and security teams supervising increasingly automated operations.
+              </p>
+
+              <p>
+                But the goal should not be to create machines that act without limits. It should be to build systems that respond quickly, operate within enforceable boundaries, and remain accountable to the people responsible for them.
+              </p>
+
+              <p>
+                Perhaps the most important question is no longer whether AI will participate in cybersecurity but whether we can build defenses that remain reliable when the attacker is intelligent, adaptive, and operating at machine speed.
+              </p>
+
+              <!-- Concluding Hero Box -->
+              <div class="takeaway-quote">
+                <blockquote>
+                  <p>“When AI becomes both the weapon and the shield, our greatest responsibility is to make sure the shield knows its limits.”</p>
+                  <div class="quote-source">— Beyond Firewalls: The Age of Autonomous Defense</div>
+                </blockquote>
+              </div>
+            </section>
+
+            <!-- Bottom Share Bar -->
+            <div class="share-bar">
+              <p>Found this essay insightful? Share it with other engineers and researchers.</p>
+              <button class="copy-btn" id="copyBtn">
+                <i class="fa-regular fa-copy"></i> Copy Article Link
+              </button>
+            </div>
+
+            <!-- References -->
+            <section id="references" class="references-container">
+              <h2>References</h2>
+              <ol class="ref-ordered-list">
+                <li id="ref-1">
+                  Google Cloud, Google Threat Intelligence Group. 
+                  <a href="https://cloud.google.com/security" target="_blank" rel="noopener noreferrer">
+                    From Prompting to Autonomy: The Evolution of Adversarial AI
+                  </a>, September 2026.
+                </li>
+                <li id="ref-2">
+                  OWASP Foundation. 
+                  <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener noreferrer">
+                    OWASP Top 10 for Large Language Model Applications
+                  </a>.
+                </li>
+                <li id="ref-3">
+                  National Institute of Standards and Technology (NIST). 
+                  <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer">
+                    Artificial Intelligence Risk Management Framework
+                  </a>.
+                </li>
+                <li id="ref-4">
+                  National Institute of Standards and Technology (NIST). 
+                  <a href="https://csrc.nist.gov/pubs/sp/800/61/r3/ipd" target="_blank" rel="noopener noreferrer">
+                    SP 800-61 Rev. 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management
+                  </a>.
+                </li>
+              </ol>
+            </section>
+
+          </div>
+        </article>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Beyond Firewalls: The Age of Autonomous Defense · Huzan Shroff, Kartikey Patil, Ishak Ansari, Vaibhav Parate, Krishna Singh</div>
+      <div>Published via GitHub Pages</div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Link copied to clipboard!</div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
